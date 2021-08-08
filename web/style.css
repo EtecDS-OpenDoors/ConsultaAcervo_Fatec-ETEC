@@ -44,6 +44,18 @@ body, ul{
     display: block;
 }
 
+h1{
+    text-align: center;
+    color: rgb(49, 49, 49);
+    margin-top: 35px;
+}
+
+p{
+    text-align: justify;
+    margin: 15px;
+    line-height: 25px;
+}
+
 @media (max-width: 600px){
     #header{
         display: flex;
@@ -62,21 +74,21 @@ body, ul{
     }
     .logo{
         width: 90px;
-        margin-left: 10px;
+        margin-left: 5px;
         height: 50px;
     }
     
     .icons{
         height: 50px;
         margin-left: 10px;
-        width: 70px;
+        width: 60px;
     }
     
     .img-csp{
-        margin-right: 10px;
+        margin-right: 8px;
     }
     
     .img-sp{
-        margin-right: 10px;
+        margin-right: 5px;
     }
 }
