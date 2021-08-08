@@ -52,7 +52,7 @@ h1{
 
 p{
     text-align: justify;
-    margin: 15px;
+    margin-left: 55px;
     line-height: 25px;
 }
 
@@ -60,7 +60,7 @@ p{
     #header{
         display: flex;
         width: 100%;
-        height: 70px;
+        height: 60px;
         align-items: center;
         justify-content: space-between;
         background-color: rgb(189, 0, 4);
@@ -90,5 +90,9 @@ p{
     
     .img-sp{
         margin-right: 5px;
+    }
+    p{
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
