@@ -147,6 +147,7 @@ a:hover{
 /*Fim das configs do rodapé*/
 
 @media (max-width: 700px){
+    
     #header{
         display: flex;
         width: 100%;
@@ -188,10 +189,26 @@ a:hover{
     .links{
         margin-left: 15px;
     }
+
+    .footer{
+        display: block;
+        max-width: 100%;
+        min-height: 95vh;
+        height: 110vh;
+    }
+    #rodape h4{
+        margin-top: 0;
+    }
+    .rede{
+        padding-top: 15px;
+    }
+
+    /*
+    Caso precisar dessas configs do rodapé eu pego
+
     .footer{
         display: block;
         min-height: 130vh;
-        /*height: 95vh;*/
         max-width: 100%;
         padding-bottom: 130px;
     }
@@ -224,4 +241,5 @@ a:hover{
         margin-top: 115px;
         padding-top: 15px;
     }
+    */
 }
