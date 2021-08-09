@@ -5,6 +5,7 @@ body, ul{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*Começo das configs do cabeçalho*/
 .logo{
     width: 140px;
     margin-left: 32px;
@@ -78,6 +79,7 @@ a{
 a:hover{
     text-decoration: underline;
 }
+/*Fim das configs do cabeçalho*/
 
 /*Configs do rodapé*/ 
 .footer{
