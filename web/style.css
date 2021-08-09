@@ -202,6 +202,10 @@ a:hover{
     .rede{
         padding-top: 15px;
     }
+    #rodape li{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
     /*
     Caso precisar dessas configs do rodapé eu pego
