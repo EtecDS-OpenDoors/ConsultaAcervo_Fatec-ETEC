@@ -32,12 +32,32 @@
         <!--fim do caminho para a consulta do acervo-->
 
         <!--Conteúdo do site-->
-        <section class="conteudo">
-            <div class="descricao">
-                <h1>CONSULTA AO ACERVO ONLINE</h1>
-                <p>Nesta área você poderá consultar todo o acervo de bibliografia existente na Fatec da Zona Leste.</p>
-            </div>
-        </section>
+        <main> 
+            <section class="conteudo">
+                <div class="descricao">
+                    <h1>CONSULTA AO ACERVO ONLINE</h1>
+                    <p>Nesta área você poderá consultar todo o acervo de bibliografia existente na Fatec da Zona Leste.</p>
+                    <div class="content">
+                        <fieldset>
+                            <legend> Pesquisa de bibliografia </legend>
+                            <select name="Biblioteca">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="etecZS"><a href="#">Autor</a></option>
+                                <option value="etecZS"><a href="#">Livro</a></option>
+                            </select>
+                                <div class="divBusca">
+                                    <img src="icon/search.png" alt="Buscar..">
+                                    <input type="text" id="inputConsulta" placeholder="Consultar...">
+                                    <button>Buscar</button>
+                                </div>  
+                            <div class="divLivros">
+                                <!-- Utilizar esse bloco com php para fazer a inserção de fotos -->
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </section>
+        </main> 
         <!--fim do conteúdo do site-->
 
         <!--Rodapé-->
