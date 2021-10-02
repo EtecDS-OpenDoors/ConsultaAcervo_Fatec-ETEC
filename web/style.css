@@ -1,6 +1,8 @@
+
+
 body, ul{
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
+    padding: auto;
     max-width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -91,8 +93,7 @@ a:hover{
     text-align: center;
 }
 .content {
-
-    margin: 10px auto;
+    margin: auto;
     padding: 0px;
     /* border: 2px red solid;
     box-shadow: 1px 2px 3px rgb(0, 0, 0) ; */
@@ -102,12 +103,12 @@ a:hover{
     justify-content: center;
 }
 .content fieldset{
-    margin: 15px auto;
-    padding: 20px;
+    margin: auto;
+    padding: 30px ;
     border: 2px rgb(167, 0, 0) solid;
     border-radius: 10px;
-    width: 90%;
-    height: 450px;
+    width: auto;
+    height: auto;
     /* alterar para fazer a insercao de fotos */
 }
 .content legend{
@@ -117,10 +118,9 @@ a:hover{
 }
 .content select{
     cursor: pointer;
-    margin-left: 50px;
     border-radius: 8px;
     border: 1px black solid;
-    height: 24px;
+    height: 30px;
     width: 150px;
 }
 .content select:focus{
@@ -129,29 +129,41 @@ a:hover{
 .content select:invalid{
     color: gray;
 }
+
 /* div para barra de pesquisa */
-.divBusca{
-    display: inline-block;
-    margin: 5px auto;
+
+.inputBuscar{
+    display: flex;
+    border: 1px black solid;
     margin-left: 5px;
-    margin-bottom: -7px;
     padding: 0px;
     /* para  alinhar a div com o select */   
     background-color: rgb(255, 255, 255);
-    border: 1px black solid;
     border-radius: 8px;
     width: auto;
-    height: 21px;
+    height: 27px;
+}
+
+.divBusca{
+    display: inline-flex;
+    margin: 5px;
+    margin-bottom: -7px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    width: auto;
+    height: 30px;
 }
 .divBusca input{
-    float: left;
+    display: flex;
     background-color: transparent;
     font-size: 18px;
     padding-left: 5px;
     border: none;
     /* border: 1px red solid; */
-    height: 21px;
-    width: auto;
+    height: auto;
+    width: 100%;
           
 }
 .divBusca input:focus{
@@ -162,33 +174,30 @@ a:hover{
 }
 .divBusca button{
     border: none;
-    float: right;
-    height: 21px;
+    height: auto;
     border-radius: 0 7px 7px 0;
-    width: 60px;
+    width: auto;
     font-weight: bold;
     color: white;
     background: rgb(190, 0, 0);
     cursor: pointer;
-    position: relative;
     transition: 0.2s;
 }
 .divBusca button:hover{
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 14px;
     background-color: rgba(190, 0, 0, 0.596);
 }
 .divBusca img{
-    float: left;
-    padding-top: 1px;
-    padding-left: 3px;
+    padding-top: 0px;
+    padding-left: 5px;
     width: 18px;
 }
 
 /* fim barra de pesquisa */
 .divLivros{
-    display: block;
-    margin: 10px auto;
+    display: flex;
+    margin: auto;
     border-radius: 8px;
     border: 1px black solid;
     border-radius: 2px black;
@@ -228,7 +237,7 @@ a:hover{
     border-width:thin;
     color: rgb(121, 121, 121);
 }
-.iconLink a:hover{
+#rodape  a:hover{
     text-decoration: none;
     margin: 8px;
     filter: brightness(33%);
@@ -243,7 +252,6 @@ a:hover{
     height: 45px;
 }
 /*Fim das configs do rodapé*/
-
 @media (max-width: 700px){
     #header{
         display: flex;
@@ -265,7 +273,6 @@ a:hover{
         margin-left: 5px;
         height: 50px;
     }
-    
     .icons{
         height: 50px;
         margin-left: 10px;
@@ -286,169 +293,32 @@ a:hover{
     .links{
         margin-left: 15px;
     }
-    .footer{
-        display: block;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    #rodape{
-        margin: 0 0 0 25px;
-    }
-    .content {
-
-        margin: 10px auto;
-        padding: 0px;
-        /* border: 2px red solid;
-        box-shadow: 1px 2px 3px rgb(0, 0, 0) ; */
-        width: 80%;
-        height: 450px;
-        align-items: center;
-        justify-content: center;
-        transition: 0.2s;
-    }
-    .content fieldset{
-        margin: 10px auto;
-        padding: 20px;
-        border: 2px rgb(167, 0, 0) solid;
-        border-radius: 10px;
-        width: auto;
-        height: 88%;
-        transition: 0.2s;
-    }
-    .content legend{
-        margin-left: -20px;
-    }
-    .content select{
-        cursor: pointer;
-        margin: 5px auto;
-        margin-left: 5px;
-        border-radius: 8px;
-        border: 1px black solid;
-        height: 24px;
-        width: 150px;
-    }
-    .content select:focus{
-        outline: 0;
-    }
-    .content select:invalid{
-        color: gray;
-    }
-    /* div para barra de pesquisa */
-    .divBusca{
-        display: inline-block;
-        margin: 5px auto;
-        margin-left: 5px;
-        margin-bottom: -7px;
-        padding: 0px;
-        /* para  alinhar a div com o select */
-        background-color: rgb(255, 255, 255);
-        border: 1px black solid;
-        border-radius: 8px;
-        width: auto;
-        height: 21px;
-        transition: 0.2s;
-    }
-    .divBusca input{
-        float: left;
-        background-color: transparent;
-        font-size: 18px;
-        padding-left: 5px;
-        border: none;
-        height: 21px;
-        width: auto;
-        transition: 0.2s;
-            
-    }
-    .divBusca input:focus{
-        border: none;
-        outline: 0px;
-        font-size: 18px;
-    }
-    .divBusca button{
-        border: none;
-        float: right;
-        height: 21px;
-        border-radius: 0 7px 7px 0;
-        width: 40px;
-        font-weight: bold;
-        font-size: 10px;
-        color: white;
-        background: rgb(190, 0, 0);
-        cursor: pointer;
-        position: relative;
-        transition: 0.2s;
-    }
-    .divBusca button:hover{
-        transition: 0.3s;
-        font-size: 12px;
-        background-color: rgba(190, 0, 0, 0.596);
-    }
-    .divBusca img{
-        float: left;
-        padding-top: 1px;
-        padding-left: 3px;
-        width: 18px;
-    }
-    /* fim barra de pesquisa */
-    .divLivros{
-        display: block;
-        margin: 10px auto;
-        border: 1px black solid;
-        border-radius: 2px black;
-        height: 90% auto;
-        width: auto;
-        transition: 0.2s;
+    
+    @media (max-width: 660px){
+        footer{
+            flex-direction: column;
+            justify-content: center !important;
+            padding-right: 15px !important;
+        }
     }
 }
 @media (max-width: 450px) {
-    .divBusca input{
-        float: left;
-        background-color: transparent;
-        font-size: 16px;
-        padding-left: 5px;
-        height: 21px;
-        width: 65%;
-        transition: 0.2s;
-        /* border: 1px red solid; */
-
-    }
-    .divBusca input:focus{
-        border: none;
-        outline: 0px;
-        font-size: 16px;
-    }
-    .divBusca button{
-        border: none;
-        float: right;
-        height: 21px;
-        border-radius: 0 7px 7px 0;
-        width: auto;
-        font-weight: bold;
-        font-size: 8px;
-        color: white;
-        background: rgb(190, 0, 0);
-        cursor: pointer;
-        position: relative;
-        transition: 0.2s;
-    }
-    .divBusca button:hover{
-        transition: 0.3s;
-        font-size: 11px;
-        background-color: rgba(190, 0, 0, 0.596);
-    }
+    .divBusca {
+        display: inline;
+     }
     .divBusca img{
-        float: left;
+        
         padding-top: 1px;
-        padding-left: 3px;
+        padding-left: 4px;
         width: 18px;
     }
     .content select{
         cursor: pointer;
-        margin-left: 5px;
         border-radius: 8px;
         border: 1px black solid;
         height: 24px;
         width: 65%;
+        margin-bottom: 10px;
     }
     /* fim barra de pesquisa */
     .divLivros{
@@ -462,59 +332,37 @@ a:hover{
     }    
 }
 @media(max-width:300px){
-    .divBusca input{
-        float: left;
-        background-color: transparent;
-        font-size: 9px;
-        padding-left: 5px;
-        height: 21px;
-        width: 50%;
-        transition: 0.2s;
-        /* border: 1px red solid; */
-
-    }
-    .divBusca input:focus{
-        border: none;
-        outline: 0px;
-        font-size: 8px;
-    }
-    .divBusca button{
-        border: none;
-        padding: 0px;
-        float: right;
-        height: 21px;
-        border-radius: 0 7px 7px 0;
-        width: 20%;
-        font-weight: bold;
-        font-size: 8px;
-        color: white;
-        background: rgb(190, 0, 0);
-        cursor: pointer;
-        position: relative;
-        transition: 0.2s;
-    }
-    .divBusca button:hover{
-        transition: 0.3s;
-        font-size: 9px;
-        background-color: rgba(190, 0, 0, 0.596);
-    }
+    .divBusca {
+        display: inline;
+     }
     .divBusca img{
         float: left;
-        padding-top: 2px;
-        padding-left: 3px;
-        width: 16px;
+        padding-top: 1px;
+        padding-left: 4px;
+        width: 15px;
+        height: auto;
     }
     .content select{
         cursor: pointer;
-        margin-left: 5px;
         border-radius: 8px;
         border: 1px black solid;
-        font-size: 12px;
         height: 24px;
-        width: auto;
+        width: 65%;
+        margin-bottom: 10px;
     }
+    /* fim barra de pesquisa */
+    .divLivros{
+        display: block;
+        margin: 10px auto;
+        border: 1px black solid;
+        border-radius: 2px black;
+        height: 90% auto;
+        width: auto;
+        transition: 0.2s;
+    } 
     .content legend{
         margin-left: -20px auto;
         font-size: 14px;
     }
 }
+
