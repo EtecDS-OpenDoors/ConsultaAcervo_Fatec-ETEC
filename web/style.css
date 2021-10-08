@@ -361,7 +361,7 @@ a:hover{
         transition: 0.2s;
     } 
     .content legend{
-        margin-left: -20px auto;
+        margin-left: -30px auto;
         font-size: 14px;
     }
 }
