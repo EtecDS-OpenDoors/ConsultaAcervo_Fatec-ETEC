@@ -1,9 +1,9 @@
 <?php
- $sql_details = array(
-    'user' => 'sql10441543',
-    'pass' => 'RPDnsvbqt9',
-    'db'   => 'sql10441543',
-    'host' => 'sql10.freemysqlhosting.net'
+$sql_details = array(
+    'user' => 'openbiblio2',
+    'pass' => 'admin123',
+    'db'   => 'openbiblio',
+    'host' => '52.70.164.196'
 );
 /*
  * DataTables example server-side processing script.
